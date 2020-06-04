@@ -94,8 +94,8 @@ def main():
 
 if __name__ == '__main__':
     in_stream, out_streams = init_streams()
-    face_detection_openvino = load_xml_bin('model/face-detection-adas-0001.xml')
-    face_reid_openvino = load_xml_bin('model/face-reidentification-retail-0095.xml')
+    face_detection_openvino = load_xml_bin('model/<FACE DETECTION MODEL>')
+    face_reid_openvino = load_xml_bin('model/<FACE REIDENTFICATION MODEL>')
     es_client = init_es()
     if es_client is None:
         print('[WARNING] elasticsearch is offline')
